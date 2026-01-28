@@ -415,6 +415,29 @@
                 nav.classList.remove('scrolled');
             }
         });
+
+        // Mobile video autoplay fix
+        // Use Vimeo Player API to force play on mobile
+        const heroVideoIframe = document.querySelector('.hero-video-bg iframe');
+        if (heroVideoIframe) {
+            // Try to play immediately
+            const tryAutoplay = () => {
+                heroVideoIframe.contentWindow.postMessage('{"method":"play"}', '*');
+            };
+
+            // Attempt autoplay after a short delay
+            setTimeout(tryAutoplay, 500);
+
+            // Also try on any user interaction
+            const forcePlay = () => {
+                tryAutoplay();
+                document.removeEventListener('touchstart', forcePlay);
+                document.removeEventListener('click', forcePlay);
+            };
+
+            document.addEventListener('touchstart', forcePlay, { once: true });
+            document.addEventListener('click', forcePlay, { once: true });
+        }
     </script>
 </body>
 
