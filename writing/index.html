@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecton | Nils Taranger</title>
+    <meta name="description" content="A cinematic reflection on the documentary 'Architecton' by Victor Kossakovsky.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        .writing-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-lg);
+        }
+
+        .writing-header {
+            margin-bottom: var(--space-xl);
+            text-align: left;
+        }
+
+        .writing-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--space-md);
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .writing-content {
+            font-family: var(--font-sans);
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--color-text-muted);
+        }
+
+        .writing-content p {
+            margin-bottom: var(--space-md);
+        }
+
+        .quote-block {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--color-text);
+            border-left: 2px solid var(--color-primary);
+            padding-left: var(--space-md);
+            margin: var(--space-xl) 0;
+            line-height: 1.4;
+        }
+
+        .back-nav {
+            position: fixed;
+            top: var(--space-md);
+            left: var(--space-lg);
+            z-index: 100;
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            transition: color var(--transition-fast);
+        }
+
+        .back-link:hover {
+            color: var(--color-text);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav class="back-nav">
+        <a href="../index.html" class="back-link">
+            <span>←</span> Back to Home
+        </a>
+    </nav>
+
+    <main class="writing-container">
+        <header class="writing-header">
+            <h1 class="writing-title">Architecton</h1>
+        </header>
+
+        <article class="writing-content">
+            <div class="quote-block">
+                “When we design something, we design the behavior of people.” - Michele De Lucchi
+            </div>
+
+            <p>The experimental documentary “Architecton” (written and directed by Victor Kossakovsky) is a masterpiece of design. The film cuts between a scene of architect Michele de Lucchi building a sacred stone circle, and the harsh way stone is extracted from a mountain in order to make concrete. This juxtaposition, along with beautifully shot scenes of ancient temples and mysterious landmarks, immerses the viewer in a sensorial landscape that is more about feeling, sensing what each moment might mean viscerally, in a somatic sense, rather than just analyzing what is happening visually.</p>
+
+            <p>The first explosion of rock in the film is breathtakingly slow motion. The textures of the rocks bashing against each other are entrancing, along with the sound effects. Instead of being told what we are seeing, the viewer is left to experience the blast with no context, and just live in the moment - a moment that seems to go on and on and on. For a period of time, one can get lost in the sensorial and forget the logical. It is truly a meditative journey, something we do not often get from a film. Narrative structure dissolves for a while, and we are left to observe, in epic detail, each step in the process of modern concrete formation. The ultra wide shot of the side of the mountain, as we see the huge chunk that has been removed from mining, is particularly moving after spending so long in tight, close up shots that lacked the full context. When we are finally given it, the payoff is rewarding.</p>
+
+            <p>As Michele walks around an ancient huge stone carved masterfully from a time long forgotten, what strikes me is how small he is in the frame compared to the stone. It evokes a proper perspective of how small we are in the universe, and how much there is to learn and explore and grow from.</p>
+
+            <p>The harsh, high contrast lighting of the mysterious landmarks featured in the film (sometimes in black and white, no less) are left again for us to experience viscerally. What does the concrete feel like in us? What does the stone feel like? And as we are carefully led back to the formation of the sacred stone circle, a growing tension between the two worlds becomes apparent. There is a crumbling and there is a holding. The flyover shots of formerly fancy concrete high rises, now destroyed. The gut wrenchingly long close up shot of concrete being squirted out to build a new home by a robot machine. These design choices effect our lives.</p>
+
+            <p>Architecton invites us to think about the way we live through architecture. The design of a building designs the behavior of people, because we are not separated from the world around us - we are a part of it. This can be extrapolated to other designs as well. With each image we create, each piece of art we make, each film we produce, we shape ourselves and the world around us.</p>
+        </article>
+    </main>
+
+    <script>
+        const cursorGlow = document.getElementById('cursorGlow');
+        let mouseX = 0, mouseY = 0;
+        let glowX = 0, glowY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateGlow() {
+            glowX += (mouseX - glowX) * 0.1;
+            glowY += (mouseY - glowY) * 0.1;
+            cursorGlow.style.left = glowX + 'px';
+            cursorGlow.style.top = glowY + 'px';
+            requestAnimationFrame(animateGlow);
+        }
+        animateGlow();
+    </script>
+</body>
+
+</html>
