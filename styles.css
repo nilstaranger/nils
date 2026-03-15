@@ -568,7 +568,7 @@ a {
 }
 
 .projects-stack .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) translateZ(0);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(124, 58, 237, 0.1);
     border-color: var(--color-border-accent);
 }
@@ -592,13 +592,16 @@ a {
    =========================== */
 .project-card {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(40px) translateZ(0);
     transition: opacity var(--transition-slow), transform var(--transition-slow);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 .project-card.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
 }
 
 .project-card.compact {

@@ -285,11 +285,19 @@
             rootMargin: '0px 0px -80px 0px'
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
                     entry.target.style.transitionDelay = `${index * 0.1}s`;
                     entry.target.classList.add('visible');
+                    
+                    // Stop observing once animated
+                    obs.unobserve(entry.target);
+                    
+                    // Clean up transition delay after animation finishes so hover state transitions smoothly
+                    setTimeout(() => {
+                        entry.target.style.transitionDelay = '';
+                    }, 1000 + (index * 100));
                 }
             });
         }, observerOptions);
