@@ -567,7 +567,7 @@ a {
     }
 }
 
-.projects-stack .project-card:hover {
+.projects-stack .project-card.is-hovered {
     transform: translateY(-8px) translateZ(0);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(124, 58, 237, 0.1);
     border-color: var(--color-border-accent);

@@ -348,6 +348,20 @@
             document.addEventListener('touchstart', forcePlay, { once: true });
             document.addEventListener('click', forcePlay, { once: true });
         }
+
+        // Debounced hover for project cards (prevents iframe hover oscillation/jitter)
+        document.querySelectorAll('.projects-stack .project-card').forEach(card => {
+            let hoverTimeout;
+            card.addEventListener('mouseenter', () => {
+                clearTimeout(hoverTimeout);
+                card.classList.add('is-hovered');
+            });
+            card.addEventListener('mouseleave', () => {
+                hoverTimeout = setTimeout(() => {
+                    card.classList.remove('is-hovered');
+                }, 150);
+            });
+        });
     </script>
 </body>
 
