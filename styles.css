@@ -293,8 +293,8 @@ button:focus-visible {
     margin-bottom: 1.35rem;
     font-family: var(--font-display);
     font-size: clamp(3.4rem, 13vw, 8rem);
-    font-weight: 400;
-        line-height: 0.92;
+    font-weight: 800;
+    line-height: 0.92;
     letter-spacing: -0.035em;
 }
 
