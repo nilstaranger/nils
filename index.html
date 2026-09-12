@@ -6,346 +6,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nils Taranger | Creative Producer</title>
     <meta name="description"
-        content="Film-trained creative producer with 13 years of experience in video production, EdTech, and AI-assisted workflows.">
+        content="Film-trained creative producer with 17 years of experience in video production, EdTech, and AI-assisted workflows.">
+    <meta property="og:title" content="Nils Taranger | Creative Producer">
+    <meta property="og:description"
+        content="Film-trained creative producer with 17 years of experience in video production, EdTech, and AI-assisted workflows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nilstaranger.com/">
+    <meta property="og:image" content="https://nilstaranger.com/profile.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://nilstaranger.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-    <!-- Cursor glow effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-logo">NT</div>
-        <a href="#about">Bio</a>
-        <a href="#work">Work</a>
-        <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <a href="#contact">Contact</a>
-        </div>
+    <nav class="nav" aria-label="Primary">
+        <a href="#" class="nav-logo">NT</a>
+        <ul class="nav-links">
+            <li><a href="#about">Bio</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
-            <a href="#about" class="hero-badge-link">
-                <div class="hero-badge">Creative Producer</div>
-            </a>
+            <p class="hero-role">Creative Producer</p>
             <h1 class="hero-title">
                 <span class="title-line">Nils</span>
-                <span class="title-line accent">Taranger</span>
+                <span class="title-line">Taranger</span>
             </h1>
+            <p class="hero-lede">Cinematic storytelling and AI-assisted production for teams that need lean pipelines
+                without soft results.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Get in touch</a>
+                <a class="btn btn-secondary" href="#work">Selected work</a>
+            </div>
         </div>
-        <div class="hero-video-bg">
+        <div class="hero-video-bg" aria-hidden="true">
             <iframe
                 src="https://player.vimeo.com/video/69902828?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&playsinline=1&autopause=0&transparent=0&dnt=1"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer"
+                title=""
+                tabindex="-1"
+                allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
                 allowfullscreen></iframe>
         </div>
-        <div class="hero-scroll-indicator">
+        <div class="hero-scroll-indicator" aria-hidden="true">
             <div class="scroll-line"></div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="profile.jpg" alt="Nils Taranger">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="section-header">
-                        <span class="section-number">01</span>
-                        <h2 class="section-title">Bio</h2>
-                    </div>
-                    <p class="about-lead">Spent the last seven years building the video production and post pipeline for a developer-education platform, where a GenAI workflow improved video quality and reduced production time.</p>
-                    <p>Trained as a filmmaker first: MFA in Digital Entrepreneurial Cinema, short film premiered at Slamdance.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">17+</span>
-                            <span class="stat-label">Years Experience</span>
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <div class="image-frame">
+                            <img src="profile.jpg" width="576" height="576" alt="Portrait of Nils Taranger">
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">60+</span>
-                            <span class="stat-label">Courses Produced</span>
+                    </div>
+                    <div class="about-content reveal">
+                        <div class="section-header">
+                            <span class="section-eyebrow">01 — Bio</span>
+                            <h2 class="section-title">Bio</h2>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">400%</span>
-                            <span class="stat-label">Channel Growth</span>
+                        <p class="about-lead">Spent the last seven years building the video production and post pipeline
+                            at Vue Mastery, where a GenAI workflow improved video quality and cut production time.</p>
+                        <p>Trained as a filmmaker first: MFA in Digital Entrepreneurial Cinema, short film premiered at
+                            Slamdance.</p>
+                        <div class="about-stats">
+                            <div class="stat reveal">
+                                <span class="stat-number">17+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat reveal">
+                                <span class="stat-number">60+</span>
+                                <span class="stat-label">Courses Produced</span>
+                            </div>
+                            <div class="stat reveal">
+                                <span class="stat-number">400%</span>
+                                <span class="stat-label">Channel Growth</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Work Section -->
-    <section id="work" class="work">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Selected Work</h2>
-            </div>
+        <section id="work" class="work">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-eyebrow">02 — Work</span>
+                    <h2 class="section-title">Selected Work</h2>
+                </div>
 
-            <!-- Selected Work Section -->
-            <div class="work-category">
                 <div class="projects-stack">
-                    <article class="project-card" data-project="0">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/VN0ccWon0Dc"
-                                    title="We Studied 4,000 Gay Couples - Here's What We Found" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://i.ytimg.com/vi/VN0ccWon0Dc/hqdefault.jpg')"
+                                data-provider="youtube" data-id="VN0ccWon0Dc"
+                                aria-label="Play Gay Couples Institute brand film">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Brand Film</span>
-                                <span class="project-tech">AI-enhanced</span>
-                            </div>
+                            <p class="project-meta">Brand film · AI-enhanced</p>
                             <h3 class="project-title">Gay Couples Institute</h3>
-                            <p class="project-description">Documentary brand film shot on iPhone 17. Production enhanced with a generative AI pipeline: audio enhancement (Adobe), custom score (Suno), and logo animation (Veo) to achieve studio-grade results with a lean workflow.</p>
+                            <p class="project-description">Documentary brand film shot on iPhone 17. Production enhanced
+                                with a generative AI pipeline: audio enhancement (Adobe), custom score (Suno), and logo
+                                animation (Veo) for studio-grade results with a lean workflow.</p>
                         </div>
                     </article>
 
-                    <article class="project-card" data-project="1">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/S5A-LMa1tGQ"
-                                    title="The best way to learn Vue.js" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://i.ytimg.com/vi/S5A-LMa1tGQ/hqdefault.jpg')"
+                                data-provider="youtube" data-id="S5A-LMa1tGQ"
+                                aria-label="Play The Best Way to Learn Vue.js">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">EdTech</span>
-                                <span class="project-tech">Commercial</span>
-                            </div>
+                            <p class="project-meta">EdTech · Vue Mastery</p>
                             <h3 class="project-title">The Best Way to Learn Vue.js</h3>
-                            <p class="project-description">Ad spot for an EdTech platform, showcasing the platform's approach to teaching modern web development through compelling visual storytelling.</p>
+                            <p class="project-description">Ad spot for Vue Mastery, showing the platform’s approach to
+                                teaching modern web development through clear visual storytelling.</p>
                         </div>
                     </article>
 
-                    <article class="project-card" data-project="2">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://player.vimeo.com/video/65216692" title="Happy Mother(s) Day"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://vumbnail.com/65216692.jpg')"
+                                data-provider="vimeo" data-id="65216692"
+                                aria-label="Play Happy Mother(s) Day">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Commercial</span>
-                            </div>
+                            <p class="project-meta">Commercial</p>
                             <h3 class="project-title">Happy Mother(s) Day</h3>
-                            <p class="project-description">Ad spot that I wrote, produced, and directed with full crew. Aired locally on CNN, ESPN, and FOX.</p>
+                            <p class="project-description">Ad spot I wrote, produced, and directed with a full crew.
+                                Aired locally on CNN, ESPN, and FOX.</p>
                         </div>
                     </article>
 
-                    <article class="project-card" data-project="3">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://player.vimeo.com/video/65253990" title="Out" frameborder="0"
-                                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://vumbnail.com/65253990.jpg')"
+                                data-provider="vimeo" data-id="65253990"
+                                aria-label="Play Out">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Short film</span>
-                                <span class="project-tech">Experimental</span>
-                            </div>
+                            <p class="project-meta">Short film</p>
                             <h3 class="project-title">Out</h3>
-                            <p class="project-description">Experimental narrative short film I wrote and directed with a full crew.</p>
+                            <p class="project-description">Experimental narrative short I wrote and directed with a full
+                                crew.</p>
                         </div>
                     </article>
 
-                    <article class="project-card" data-project="4">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://player.vimeo.com/video/69902828" title="A Blue Flower"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://vumbnail.com/69902828.jpg')"
+                                data-provider="vimeo" data-id="69902828"
+                                aria-label="Play A Blue Flower trailer">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Documentary</span>
-                                <span class="project-tech">MFA Thesis</span>
-                            </div>
+                            <p class="project-meta">Feature documentary</p>
                             <h3 class="project-title">A Blue Flower</h3>
-                            <p class="project-description">A feature length documentary I wrote, directed, and produced as my MFA thesis project at UCF Film, exploring identity, spirituality, and transformation.</p>
+                            <p class="project-description">Feature documentary I wrote, directed, and produced
+                                independently, exploring identity, spirituality, and transformation.</p>
                         </div>
                     </article>
 
-                    <article class="project-card" data-project="5">
+                    <article class="project-card reveal">
                         <div class="project-video">
-                            <div class="video-wrapper">
-                                <iframe src="https://player.vimeo.com/video/75403741" title="Metro Gives Me"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                            <button type="button" class="video-facade"
+                                style="background-image: url('https://vumbnail.com/75403741.jpg')"
+                                data-provider="vimeo" data-id="75403741"
+                                aria-label="Play Metro Gives Me">
+                                <span class="play">Play</span>
+                            </button>
                         </div>
                         <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">Brand Film</span>
-                            </div>
+                            <p class="project-meta">Brand film</p>
                             <h3 class="project-title">Metro Gives Me</h3>
                             <p class="project-description">Brand film I produced and directed with a full crew.</p>
                         </div>
                     </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Let's Connect</h2>
-            </div>
-            <div class="contact-content">
-                <p class="contact-text">Let’s build something. I’m available for projects at the crossroads of cinematic storytelling and AI-driven content operations.</p>
-                <a href="mailto:nils@nilstaranger.com" class="contact-email">
-                    <span class="email-text">nils@nilstaranger.com</span>
-                    <span class="email-arrow">→</span>
-                </a>
-                <div class="contact-links">
-                    <a href="https://linkedin.com/in/nilstaranger" target="_blank" rel="noopener" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        LinkedIn
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-eyebrow">03 — Contact</span>
+                    <h2 class="section-title">Let’s Connect</h2>
+                </div>
+                <div class="contact-content">
+                    <p class="contact-text">Let’s build something. I’m available for projects at the crossroads of
+                        cinematic storytelling and AI-driven content operations.</p>
+                    <a href="mailto:nils@nilstaranger.com" class="contact-email">
+                        <span>nils@nilstaranger.com</span>
+                        <span aria-hidden="true">→</span>
                     </a>
+                    <div class="contact-links">
+                        <a href="https://linkedin.com/in/nilstaranger" target="_blank" rel="noopener noreferrer"
+                            class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <span class="footer-logo">NT</span>
-                <p>Site by Nils. Vibe coding by Google Antigravity.</p>
+                <p>Site by Nils.</p>
                 <span class="footer-year">2026</span>
             </div>
         </div>
     </footer>
 
     <script>
-        // Cursor glow effect
-        const cursorGlow = document.getElementById('cursorGlow');
-        let mouseX = 0, mouseY = 0;
-        let glowX = 0, glowY = 0;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        function animateGlow() {
-            glowX += (mouseX - glowX) * 0.1;
-            glowY += (mouseY - glowY) * 0.1;
-            cursorGlow.style.left = glowX + 'px';
-            cursorGlow.style.top = glowY + 'px';
-            requestAnimationFrame(animateGlow);
-        }
-        animateGlow();
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (e) => {
+                const href = anchor.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (!target) return;
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
             });
         });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -80px 0px'
-        };
 
         const observer = new IntersectionObserver((entries, obs) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    entry.target.style.transitionDelay = `${index * 0.1}s`;
-                    entry.target.classList.add('visible');
-                    
-                    // Stop observing once animated
-                    obs.unobserve(entry.target);
-                    
-                    // Clean up transition delay after animation finishes so hover state transitions smoothly
-                    setTimeout(() => {
-                        entry.target.style.transitionDelay = '';
-                    }, 1000 + (index * 100));
-                }
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
             });
-        }, observerOptions);
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 
-        document.querySelectorAll('.project-card, .about-content, .about-image, .stat, .section-header').forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.reveal, .section-header').forEach((el) => {
+            if (reduceMotion) el.classList.add('visible');
+            else observer.observe(el);
         });
 
-        // Parallax effect on hero
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero-content');
-            if (hero && scrolled < window.innerHeight) {
-                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-                hero.style.opacity = 1 - (scrolled / (window.innerHeight * 0.8));
-            }
-        });
-
-        // Nav background on scroll
         const nav = document.querySelector('.nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+        const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 80);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        function embedHtml(provider, id, title) {
+            const safe = title.replace(/"/g, '&quot;');
+            if (provider === 'youtube') {
+                return `<div class="video-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${safe}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
             }
-        });
-
-        // Mobile video autoplay fix
-        // Use Vimeo Player API to force play on mobile
-        const heroVideoIframe = document.querySelector('.hero-video-bg iframe');
-        if (heroVideoIframe) {
-            // Try to play immediately
-            const tryAutoplay = () => {
-                heroVideoIframe.contentWindow.postMessage('{"method":"play"}', '*');
-            };
-
-            // Attempt autoplay after a short delay
-            setTimeout(tryAutoplay, 500);
-
-            // Also try on any user interaction
-            const forcePlay = () => {
-                tryAutoplay();
-                document.removeEventListener('touchstart', forcePlay);
-                document.removeEventListener('click', forcePlay);
-            };
-
-            document.addEventListener('touchstart', forcePlay, { once: true });
-            document.addEventListener('click', forcePlay, { once: true });
+            return `<div class="video-wrapper"><iframe src="https://player.vimeo.com/video/${id}?autoplay=1" title="${safe}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
         }
+
+        document.querySelectorAll('.video-facade').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const title = (btn.getAttribute('aria-label') || 'Video').replace(/^Play\s+/i, '');
+                btn.parentElement.innerHTML = embedHtml(btn.dataset.provider, btn.dataset.id, title);
+            });
+        });
     </script>
 </body>
 
