@@ -18,7 +18,8 @@
     --border: rgba(238, 243, 251, 0.09);
     --border-strong: rgba(78, 168, 255, 0.45);
 
-    --font-display: "Instrument Serif", "Times New Roman", serif;
+    /* Syne for NT, name, titles — Outfit for body / hero lede */
+    --font-display: "Syne", "Segoe UI", sans-serif;
     --font-sans: "Outfit", "Segoe UI", sans-serif;
 
     --space-xs: 0.5rem;
@@ -211,10 +212,9 @@ button:focus-visible {
 .section-title {
     font-family: var(--font-display);
     font-size: clamp(2.4rem, 5.5vw, 3.75rem);
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
     line-height: 1.05;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
 }
 
 /* Hero */
@@ -294,8 +294,7 @@ button:focus-visible {
     font-family: var(--font-display);
     font-size: clamp(3.4rem, 13vw, 8rem);
     font-weight: 400;
-    font-style: italic;
-    line-height: 0.92;
+        line-height: 0.92;
     letter-spacing: -0.035em;
 }
 
@@ -471,9 +470,8 @@ button:focus-visible {
     margin-bottom: 1.25rem;
     font-family: var(--font-display);
     font-size: clamp(1.45rem, 2.6vw, 1.9rem);
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.35;
+    font-weight: 600;
+        line-height: 1.35;
     color: var(--text);
 }
 
@@ -496,8 +494,7 @@ button:focus-visible {
     margin-bottom: 0.35rem;
     font-family: var(--font-display);
     font-size: clamp(1.9rem, 3vw, 2.6rem);
-    font-style: italic;
-    line-height: 1;
+        line-height: 1;
     color: var(--accent-bright);
 }
 
@@ -644,9 +641,8 @@ button:focus-visible {
     margin-bottom: 0.65rem;
     font-family: var(--font-display);
     font-size: clamp(1.45rem, 2.4vw, 1.85rem);
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.2;
+    font-weight: 700;
+        line-height: 1.2;
 }
 
 .project-description {
@@ -679,8 +675,7 @@ button:focus-visible {
     gap: 0.75rem;
     font-family: var(--font-display);
     font-size: clamp(1.5rem, 4vw, 2.35rem);
-    font-style: italic;
-    color: var(--text);
+        color: var(--text);
     transition: color 0.3s ease, gap 0.35s var(--ease);
 }
 
