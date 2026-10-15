@@ -512,6 +512,50 @@ button:focus-visible {
     border-top: 1px solid var(--border);
 }
 
+.work-group {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.work-group:first-of-type {
+    margin-top: 0;
+}
+
+.work-group + .work-group {
+    padding-top: clamp(2.5rem, 5vw, 4rem);
+    border-top: 1px solid var(--border);
+}
+
+.work-group-header {
+    margin-bottom: var(--space-lg);
+    max-width: 36rem;
+}
+
+.work-group-header.reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+}
+
+.work-group-header.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.work-group-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.55rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--accent-bright);
+}
+
+.work-group-lede {
+    margin-top: 0.55rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
 .projects-stack {
     display: flex;
     flex-direction: column;
@@ -539,11 +583,11 @@ button:focus-visible {
         grid-template-columns: 1.2fr 1fr;
     }
 
-    .project-card:nth-child(even) {
+    .projects-stack .project-card:nth-child(even) {
         grid-template-columns: 1fr 1.2fr;
     }
 
-    .project-card:nth-child(even) .project-video {
+    .projects-stack .project-card:nth-child(even) .project-video {
         order: 2;
     }
 }
