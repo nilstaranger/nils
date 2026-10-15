@@ -227,17 +227,17 @@
                         <article class="project-card reveal">
                             <div class="project-video">
                                 <button type="button" class="video-facade"
-                                    style="background-image: url('https://vumbnail.com/570298143.jpg')"
-                                    data-provider="vimeo" data-id="570298143"
-                                    aria-label="Play Proven Pinia Patterns intro">
+                                    style="background-image: url('https://i.ytimg.com/vi/hOnUr2ezCQU/hqdefault.jpg')"
+                                    data-provider="youtube" data-id="hOnUr2ezCQU" data-start="12"
+                                    aria-label="Play AI Tools for Web Developers">
                                     <span class="play">Play</span>
                                 </button>
                             </div>
                             <div class="project-info">
-                                <p class="project-meta">Vue Mastery · Course lesson</p>
-                                <h3 class="project-title">Proven Pinia Patterns — Intro</h3>
-                                <p class="project-description">Course lesson produced for Vue Mastery — educational
-                                    video from the Proven Pinia Patterns series.</p>
+                                <p class="project-meta">Vue Mastery · Educational</p>
+                                <h3 class="project-title">AI Tools for Web Developers</h3>
+                                <p class="project-description">Produced for Vue Mastery — future-proofing web-dev skills
+                                    with AI tools in the production toolkit.</p>
                             </div>
                         </article>
                     </div>
@@ -316,10 +316,11 @@
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
 
-        function embedHtml(provider, id, title) {
+        function embedHtml(provider, id, title, start) {
             const safe = title.replace(/"/g, '&quot;');
             if (provider === 'youtube') {
-                return `<div class="video-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${safe}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+                const startParam = start && /^\d+$/.test(start) ? `&start=${start}` : '';
+                return `<div class="video-wrapper"><iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0${startParam}" title="${safe}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
             }
             return `<div class="video-wrapper"><iframe src="https://player.vimeo.com/video/${id}?autoplay=1" title="${safe}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
         }
@@ -327,7 +328,7 @@
         document.querySelectorAll('.video-facade').forEach((btn) => {
             btn.addEventListener('click', () => {
                 const title = (btn.getAttribute('aria-label') || 'Video').replace(/^Play\s+/i, '');
-                btn.parentElement.innerHTML = embedHtml(btn.dataset.provider, btn.dataset.id, title);
+                btn.parentElement.innerHTML = embedHtml(btn.dataset.provider, btn.dataset.id, title, btn.dataset.start);
             });
         });
     </script>
